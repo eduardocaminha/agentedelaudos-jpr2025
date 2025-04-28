@@ -164,13 +164,19 @@ INSTRUCAO = (
     "MODELO:\n"
     "[SEMCONTRASTENÃOCOMPARATIVO]\n"
     "**TOMOGRAFIA COMPUTADORIZADA DE TÓRAX**\n"
-    "**INDICAÇÃO:** <inserir indicação aqui>\n"
-    "**TÉCNICA:** Realizada a aquisição volumétrica com tomógrafo de multidetectores, sem a injeção do meio de contraste iodado.\n"
+    "\n"
+    "**INDICAÇÃO:**\n"
+    "<inserir indicação aqui>\n"
+    "\n"
+    "**TÉCNICA:**\n"
+    "Realizada a aquisição volumétrica com tomógrafo de multidetectores, sem a injeção do meio de contraste iodado.\n"
+    "\n"
     "**ANÁLISE:**\n"
     "Parênquima pulmonar com coeficientes de atenuação preservados.\n"
     "Traqueia e brônquios centrais pérvios, de calibre normal.\n"
     "Ausência de derrame pleural.\n"
     "...\n"
+    "\n"
     "**IMPRESSÃO DIAGNÓSTICA:**\n"
     "Tomografia computadorizada de tórax sem alterações significativas.\n"
     "<inserir aqui a impressão baseada nos achados positivos, caso contrário, manter a frase acima>\n"
@@ -205,14 +211,3 @@ root_agent = LlmAgent(
 adk web
 ```
 - Acesse [http://localhost:8000](http://localhost:8000) para interagir com o agente.
-
----
-
-## 5. Exemplo de Uso
-
-**Usuário:**
-```
-TC de tórax, sem contraste. Achado: nódulo pulmonar à direita.
-```
-**Agente:**
-```
