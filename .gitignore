@@ -1,0 +1,16 @@
+# Ignora o ambiente virtual Python
+venv/
+
+# Ignora arquivos temporários e caches do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignora arquivos de configuração locais
+.env
+.env.*
+
+# Ignora arquivos de backup de editores
+*~
+*.swp 
