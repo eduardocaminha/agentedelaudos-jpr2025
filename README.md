@@ -25,13 +25,35 @@ agentedelaudos-jpr2025/
 
 ## 1. Configuração do arquivo .env
 
-O arquivo `.env` armazena variáveis sensíveis, como chaves de API. Exemplo:
-```
-GOOGLE_API_KEY=coloque_sua_chave_aqui
-```
+O arquivo `.env` armazena variáveis sensíveis, como chaves de API. **Nunca versionar o arquivo `.env` real!**
+
+- Use o arquivo de exemplo `.env.example` como base:
+  ```sh
+  cp .env.example .env
+  # Edite o arquivo .env e preencha com sua chave real
+  ```
 - Para obter sua chave, acesse o [Google AI Studio](https://aistudio.google.com/app/apikey).
 - Nunca compartilhe o `.env` publicamente.
 - O ADK carrega automaticamente as variáveis do `.env` ao iniciar.
+
+---
+
+## 1.1. Removendo arquivos sensíveis e caches do Git
+
+Se você acidentalmente versionou a pasta `__pycache__` ou arquivos sensíveis, remova-os do controle do Git:
+
+```sh
+git rm -r --cached agente/__pycache__
+git commit -m "Remove __pycache__ do repositório"
+```
+
+O mesmo vale para qualquer arquivo `.env` que tenha sido versionado:
+
+```sh
+git rm --cached .env
+```
+
+Depois disso, garanta que `.gitignore` está correto para não versionar novamente.
 
 ---
 
