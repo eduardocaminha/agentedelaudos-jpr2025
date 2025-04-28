@@ -13,4 +13,4 @@ __pycache__/
 
 # Ignora arquivos de backup de editores
 *~
-*.swp 
+*.swp venv/
