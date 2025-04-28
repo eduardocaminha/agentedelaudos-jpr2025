@@ -11,7 +11,7 @@ Este projeto demonstra como construir um agente de IA para geração de laudos r
 ## Estrutura de Pastas Recomendada
 
 ```
-seu_projeto/
+agentedelaudos-jpr2025/
 ├── agente/
 │   ├── agent.py           # Código principal do agente
 │   ├── laudario.md        # Modelos de laudo estruturados
@@ -46,6 +46,7 @@ GOOGLE_API_KEY=coloque_sua_chave_aqui
 ```
 [SEMCONTRASTENÃOCOMPARATIVO]
 **TOMOGRAFIA COMPUTADORIZADA DE TÓRAX**
+
 **INDICAÇÃO:** 
 <inserir indicação aqui>
 
