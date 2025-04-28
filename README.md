@@ -38,25 +38,6 @@ O arquivo `.env` armazena variáveis sensíveis, como chaves de API. **Nunca ver
 
 ---
 
-## 1.1. Removendo arquivos sensíveis e caches do Git
-
-Se você acidentalmente versionou a pasta `__pycache__` ou arquivos sensíveis, remova-os do controle do Git:
-
-```sh
-git rm -r --cached agente/__pycache__
-git commit -m "Remove __pycache__ do repositório"
-```
-
-O mesmo vale para qualquer arquivo `.env` que tenha sido versionado:
-
-```sh
-git rm --cached .env
-```
-
-Depois disso, garanta que `.gitignore` está correto para não versionar novamente.
-
----
-
 ## 2. Estruturação do Modelo de Laudo (`laudario.md`)
 
 - Cada modelo tem um identificador entre colchetes (ex: `[SEMCONTRASTENÃOCOMPARATIVO]`).
