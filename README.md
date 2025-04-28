@@ -16,7 +16,7 @@ agentedelaudos-jpr2025/
 │   ├── agent.py           # Código principal do agente
 │   ├── laudario.md        # Modelos de laudo estruturados
 │   ├── .env               # Variáveis de ambiente (ex: GOOGLE_API_KEY)
-│   └── __init__.py        # (pode estar vazio)
+│   └── __init__.py        # Configuração recomendada pelo Google ADK
 ├── venv/                  # Ambiente virtual Python
 ├── README.md              # Este arquivo
 ```
