@@ -9,7 +9,6 @@ __pycache__/
 
 # Ignora arquivos de configuração locais
 .env
-.env.*
 
 # Ignora arquivos de backup de editores
 *~
